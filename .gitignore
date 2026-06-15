@@ -1,0 +1,6 @@
+# 环境文件
+.env
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
