@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "description": "记录已处理的会话，避免重复扫描。键为 session_id，值为该会话的最后活跃时间戳和处理信息。",
+  "analyses": {
+    "20260616_113624_679687": {
+      "last_active": 1781581545.5033014,
+      "analyzed_at": 1781612039,
+      "actions_taken": ["无沉淀 - 会话内容分析失败，本质是session-curation cron job故障排查。问题(cron import error)已在skill的踩坑记录中说明，无新沉淀"],
+      "session_title": "会话内容分析失败"
+    },
+    "20260615_212210_18fa57": {
+      "last_active": 1782243151.1062129,
+      "analyzed_at": 1782268800,
+      "actions_taken": ["无沉淀 - 全量AI审核测试(37目录×5条=185条，一致率62.2%)，项目特定回归测试，已有ai-audit-regression skill覆盖"],
+      "session_title": "测试商品审核回顾"
+    },
+    "20260615_155617_8ba904": {
+      "last_active": 1781529723.2183125,
+      "analyzed_at": 1781612039,
+      "actions_taken": ["无沉淀 - 智能审核测试(575条)，项目特定工作流(AI审核Skill vs 线上数据)，不可复用"],
+      "session_title": "审计测试结果确认"
+    },
+    "20260618_113023_5bda89": {
+      "last_active": 1781765701.5566008,
+      "analyzed_at": 1782172900,
+      "actions_taken": ["无沉淀 - 一次性代理DNS故障排查(sing-box)，诊断出Local-DNS(192.168.2.10)不可达、PUBLIC_LOCAL回退失败(SERVFAIL处理)。修复方案为添加直连UDP兜底DNS。无通用复用价值"],
+      "session_title": "代理DNS解析失败原因"
+    },
+    "20260618_143114_4aef28": {
+      "last_active": 1781765805.9531486,
+      "analyzed_at": 1782172900,
+      "actions_taken": ["无沉淀 - Skill合并任务(diff-to-business-rules)，会话中已完成创建，知识存于skill文件。understand-diff与diff-to-business-rules互补不冲突的结论也无须额外记录"],
+      "session_title": "Merging diff-to-rules and update-business-rules-docs"
+    },
+    "20260623_171648_686eb2": {
+      "last_active": 1782206777.1446357,
+      "analyzed_at": 1782268800,
+      "actions_taken": ["无沉淀 - OpenCode添加本地MiMo模型(provider配置)，一次性配置任务，opencode-setup skill已覆盖此类操作"],
+      "session_title": "Adding New Model to Open Code"
+    },
+    "20260624_172128_9269c7": {
+      "last_active": 1782304306.665827,
+      "analyzed_at": 1782345800,
+      "actions_taken": ["无沉淀 - 漫画生成项目(圆的囚徒)，使用ComfyUI img2img+角色立绘+对话气泡。一次性创意项目，无新复用模式"],
+      "session_title": "图片生成工具选择"
+    },
+    "20260624_165247_fc80dd": {
+      "last_active": 1782291194.4368918,
+      "analyzed_at": 1782345800,
+      "actions_taken": ["无沉淀 - 低分复测操作任务，使用已有ai-audit-regression skill，项目特定回归测试"],
+      "session_title": "低分复测服务启动请求"
+    },
+    "20260624_095424_b0a291": {
+      "last_active": 1782291532.9287806,
+      "analyzed_at": 1782345800,
+      "actions_taken": ["无沉淀 - 技能仓库目录汇总→小说漫画生成。包含94个仓库的目录和10个精选skill安装到~/.hermes/skills/。skills已安装到位，无需额外沉淀"],
+      "session_title": "AI工具仓库下载汇总"
+    },
+    "20260624_102558_bfab9b": {
+      "last_active": 1782270949.1982918,
+      "analyzed_at": 1782345800,
+      "actions_taken": ["无沉淀 - Hermes Agent/插件/skills/系统更新检查，以及宠物(大橘猫)安装。状态检查任务，无新信息需保存"],
+      "session_title": "Hermes Agent 更新检查结果"
+    },
+    "20260624_100240_49e84c": {
+      "last_active": 1782268150.2587368,
+      "analyzed_at": 1782345800,
+      "actions_taken": ["无沉淀 - 下载的skill仓库汇总目录(94仓库/1280 SKILL.md)，精选10个安装到~/.hermes/skills/software-development/。skills已安装，无需额外沉淀"],
+      "session_title": "Skill仓库下载汇总"
+    },
+    "20260625_224555_995781": {
+      "last_active": 1782417828.0518653,
+      "analyzed_at": 1782432197,
+      "actions_taken": ["无沉淀 - 框架协议37目录×5条AI审核回归测试(70.8%一致率，零误放，32误拒)。项目特定回归测试，ai-audit-regression + framework-contract-sql skill已覆盖"],
+      "session_title": "框架目录测试与总结报告"
+    },
+    "20260625_113847_a89881": {
+      "last_active": 1782402895.987507,
+      "analyzed_at": 1782432197,
+      "actions_taken": ["无沉淀 - B站UP主视频查找(十有九悲爱情故事)，使用bilibili-comment-analyzer skill。一次性娱乐查询，无新复用知识"],
+      "session_title": "完美世界最悲情感人篇章"
+    },
+    "20260625_144859_dcd9c0": {
+      "last_active": 1782372538.54944,
+      "analyzed_at": 1782432197,
+      "actions_taken": ["无沉淀 - WSL SSH远程访问配置(openssh-server安装+PasswordAuthentication+KbdInteractiveAuthentication)，hermes-agent skill已覆盖SSH方案。KbdInteractiveAuthentication为标准SSH知识，非Hermes特有"],
+      "session_title": "远程访问WSL的几种方法"
+    },
+    "20260626_115539_6ccbf4": {
+      "last_active": 1782474023.5125682,
+      "analyzed_at": 1782518735,
+      "actions_taken": ["无沉淀 - 商品审核测试报告修正(346条消息)，AI审核回归测试(rerun_structured_v2.py)重跑及输出文件锁问题排查。项目特定回归测试，ai-audit-regression skill已覆盖"],
+      "session_title": "商品审核测试报告修正"
+    },
+    "20260626_134506_b1564c": {
+      "last_active": 1782473021.5678284,
+      "analyzed_at": 1782518735,
+      "actions_taken": ["无沉淀 - 姜汁汽水搜索+经济学profile创建。econ-tutor skill和econ-master profile已在会话中创建完成，无新复用知识需沉淀"],
+      "session_title": "姜汁汽水对黄金股票看法"
+    },
+    "20260626_192639_fef8a3ad": {
+      "last_active": 1782473241.43586,
+      "analyzed_at": 1782518735,
+      "actions_taken": ["无沉淀 - QQ bot软考出题(12条消息)，标准ruankao-assistant问答模式，会话太短，无新信息"],
+      "session_title": "系统架构设计师综合知识选择题"
+    },
+    "20260626_194030_ef2c83": {
+      "last_active": 1782818077.2421017,
+      "analyzed_at": 1782889895,
+      "actions_taken": ["无沉淀 - 会话更新:脚本归档(data_parser.py等5个测试脚本)已通过skill_manage入库ai-audit-regression skill。项目特定回归测试，无新独立沉淀需求"],
+      "session_title": "goods-audit-eight 复测结果汇总"
+    },
+    "20260629_150745_1f9d8c": {
+      "last_active": 1782722957.5545855,
+      "analyzed_at": 1782778317,
+      "actions_taken": ["无沉淀 - 从cron查询转入AI周报Remotion视频制作(脚手架+React组件+edge-tts配音)，remotion和report-to-video skill已覆盖此类工作流"],
+      "session_title": "定时任务创建查询"
+    },
+    "20260701_151019_f412d5": {
+      "last_active": 1782903268.0861554,
+      "analyzed_at": 1782950729,
+      "actions_taken": ["无沉淀 - upgrade-doc-generator skill已在会话中成功创建(skill_manage)，路径~/.hermes/skills/software-development/upgrade-doc-generator/SKILL.md。支持简约/详细两种模式。会话末尾转为检查月度SQL cron job，无新独立知识需保存"],
+      "session_title": "升级文档生成技能梳理"
+    },
+    "20260701_154712_630a1b": {
+      "last_active": 1782893237.8615265,
+      "analyzed_at": 1782950729,
+      "actions_taken": ["无沉淀 - 中关村推送接口性能诊断：发现base_goods.zdzSkuId缺索引导致全表扫描(show1:10万行→3s, 线上推测百万级→8s)。修复方案ALTER TABLE ADD INDEX。一次性DBA性能问题，government-procurement-ops skill已覆盖数据库运维，无需额外沉淀"],
+      "session_title": "中关村推送接口性能测试"
+    },
+    "20260702_110907_20bfcd": {
+      "last_active": 1782962682.6610978,
+      "analyzed_at": 1783321555,
+      "actions_taken": ["无沉淀 - ZGC回调接口测试(墨盒/办公耗材/印章目录不被回调识别，仅显示器可推送)。一次性API调试，government-procurement-ops和direct-purchase-sql skill已覆盖测试流程"],
+      "session_title": "中关村推送接口测试结果"
+    },
+    "20260706_150053_25c85a": {
+      "last_active": 1783388182.9000075,
+      "analyzed_at": 1783469500,
+      "actions_taken": ["无沉淀 - 会话更新:新增12条mem0软考知识库(嵌入式→案例答题13章全覆盖)。ruankao-assistant skill已覆盖,mq_mem0已入库。无新用户偏好/环境事实"],
+      "session_title": "U盘挂载与音乐下载指南"
+    },
+    "20260707_182116_68099bfa": {
+      "last_active": 1783419732.5843573,
+      "analyzed_at": 1783469500,
+      "actions_taken": ["无沉淀 - QQ bot软考测试题批改(0/10,用户全答不清楚)。标准ruankao-assistant批改流程,skill已覆盖"],
+      "session_title": "7月7日测试题批改结果"
+    },
+    "20260707_211114_683dae": {
+      "last_active": 1783433534.438837,
+      "analyzed_at": 1783469500,
+      "actions_taken": ["无沉淀 - 框架协议商品审核数据收集+单条API测试(硒鼓/京瓷DK-8350,MATCH✅)。ai-audit-regression+framework-contract-sql skill已覆盖,项目特定测试流程"],
+      "session_title": "框架协议商品智能审核数据"
+    },
+    "20260709_101730_2b02c1": {
+      "last_active": 1783564430,
+      "analyzed_at": 1783642482,
+      "actions_taken": ["无沉淀 - requirement-change-analysis skill已在会话中完成patch(探索工作空间)，代码审查为P2040平台多市场适配项目特定审查，无新用户偏好/环境事实/可复用工作流"],
+      "session_title": "现有技能与需求匹配分析"
+    },
+    "20260713_195918_6bb22a": {
+      "last_active": 1783947440,
+      "analyzed_at": 1783987954,
+      "actions_taken": ["无沉淀 - 一次性Cursor+Proxifier+Sing-box代理DNS死循环排查(72条消息)。核心诊断：机场域名july-wind.cc的DNS走Remote-DNS→走代理→节点域名又需DNS→死循环。修复：新增直连公网DNS(223.5.5.5)无detour解析机场域名。已有proxy-troubleshooting skill覆盖相似模式，无新可复用工作流/用户偏好"],
+      "session_title": "Cursor日志网络问题排查"
+    },
+    "20260713_202139_2a034e": {
+      "last_active": 1784019754.2559717,
+      "analyzed_at": 1784104140,
+      "actions_taken": ["无沉淀 - 探索性浏览(OpenMontage视频工具/Awesome-CursorRules-zh仓库)，287条消息的外部工具调研。信息浏览无复用价值，无用户偏好/环境事实/可复用工作流"],
+      "session_title": "OpenMontage 视频制作功能"
+    },
+    "20260714_180855_746187": {
+      "last_active": 1784023804.9233959,
+      "analyzed_at": 1784104140,
+      "actions_taken": ["⚠️需后续手动沉淀 - 用户明确偏好：暂停全部软考定时任务改为按需主动学习。memory工具在cron模式下返回'not available'，多次尝试(mem0/Hermes内置)均失败。需在非cron session中手动执行 memory add 保存此偏好"],
+      "session_title": "定时任务异常重复执行"
+    },
+    "20260715_162844_e36c11": {
+      "last_active": 1784113016.24433,
+      "analyzed_at": 1784160016,
+      "actions_taken": ["无沉淀 - Cursor token消耗优化问答+CodeGraph MCP配置排查(Windows/WSL混合环境)。会话为信息咨询型(56条消息)，codeGraph MCP修复(补args)过于简单不足沉淀。环境事实(codegraph路径D:\\baseSoftware\\nodejs\\npm-global\\codegraph.cmd)可自动发现。memory工具cron模式下不可用，pending软考偏好仍未保存"],
+      "session_title": "Cursor消耗优化指南"
+    },
+    "mrnc3slwl7ey8y": {
+      "last_active": 1784206962.8606045,
+      "analyzed_at": 1784246700,
+      "actions_taken": ["无沉淀 - P2040直采商城热发布(pub/lib→pub/weblib→ZCtrlCenter发布goods/trade/website)。WSL→cmd中文路径问题用mklink /D创建符号链接绕过，system-info.conf/init.bat中文改为URL编码。Maven编译成功但tomcat7:redeploy失败(test3 Tomcat未启动)。一次性项目特定部署，government-procurement-ops+direct-purchase-sql skill已覆盖该领域"],
+      "session_title": "执行脚本发布程序"
+    },
+    "20260716_164155_f2d3d3": {
+      "last_active": 1784200887.7124877,
+      "analyzed_at": 1784246700,
+      "actions_taken": ["无沉淀 - Hermes组件状态检查(Web UI未启动→启动)+Remotion视频项目讨论(hermes-skills-showcase)+文件打开操作。混合型会话，系统状态检查为标准操作(hermes-agent skill覆盖)，视频项目使用已有remotion/report-to-video skill，无新可复用知识"],
+      "session_title": "Hermes 组件状态查询"
+    },
+    "mrnbw6ro5og4rk": {
+      "last_active": 1784196419.6424632,
+      "analyzed_at": 1784246700,
+      "actions_taken": ["无沉淀 - novel-writer skill功能询问+使用该skill完善科幻短篇《圆的囚徒》(1.6万字/12章+设定文件)。novel-writer skill按设计使用，无新工作流/偏好发现。作品文件存于~/novel/yuan-de-qiu-tu/"],
+      "session_title": "novel-writer技能功能详解"
+    },
+    "20260717_174552_79b2d228": {
+      "last_active": 1784281736.96007,
+      "analyzed_at": 1784333322,
+      "actions_taken": ["无沉淀 - QQ bot软考练习(5道选择题全答不清楚→详细解析)，标准ruankao-assistant流程，无新用户偏好/环境事实/可复用工作流"],
+      "session_title": "软考复习：五道选择题"
+    },
+    "mrodfk9d1xtwzp": {
+      "last_active": 1784271271.7651718,
+      "analyzed_at": 1784333322,
+      "actions_taken": ["无沉淀 - CLI小说创作(元素纪元/化学元素精灵世界)，使用novel-writer skill完整流程(plan→outline→world→characters→第一章)，用户反馈'五个主角逐个登场'后重写第一章。标准skill使用，无新可复用工作流/用户偏好"],
+      "session_title": "元素精灵的化学大陆冒险"
+    },
+    "20260720_091648_fbd3fe": {
+      "last_active": 1784554298.7786582,
+      "analyzed_at": 1784592544,
+      "actions_taken": ["无沉淀 - freeCodeCamp在WSL下安装(~/fcc/)，319条消息。克隆→pnpm install→pnpm run develop(Gatsby全量编译19116页面)。用户发现FCC_SUPERBLOCK环境变量可只编译单课程。一次性软件安装，无新用户偏好/环境事实/可复用工作流"],
+      "session_title": "freeCodeCamp 安装"
+    },
+    "20260720_093110_4af0a4": {
+      "last_active": 1784553789.0814862,
+      "analyzed_at": 1784592544,
+      "actions_taken": ["无沉淀 - 业务规则知识图谱项目构建(~/business-rule-graph/)，437条消息。基于tree-sitter从Java代码提取业务规则→含extractor/graph/conflict/summarizer模块的Python CLI(roam命令)→检测跨文件业务冲突→推送到github.com:yanwujun/business-rule-graph.git。项目由用户亲自构建，无需额外沉淀"],
+      "session_title": "代码业务规则与知识图谱的区别"
+    },
+    "20260720_161119_03b342cb": {
+      "last_active": 1784535733.062863,
+      "analyzed_at": 1784592544,
+      "actions_taken": ["无沉淀 - DeepTutor(HKUDS开源个性化辅导系统)与Hermes学习系统对比分析，49条消息。从arxiv获取论文(2604.26962v3)、下载源码到/tmp/DeepTutor/分析架构，提出三种融合方案(渐进替代/完全迁移/互补共存)。探索性研究，用户未做决策，无新偏好/环境事实"],
+      "session_title": "DeepTutor个性化辅导系统研究"
+    }
+  },
+  "last_run_at": 1784592544
+}
