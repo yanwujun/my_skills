@@ -1,0 +1,19 @@
+{
+  "name": "poem-video",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render poem out/poem.mp4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.505",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "remotion": "^4.0.505"
+  }
+}
