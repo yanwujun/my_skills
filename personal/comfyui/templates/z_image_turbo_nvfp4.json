@@ -1,0 +1,82 @@
+{
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "vae": ["17", 0],
+      "samples": ["3", 0]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": ["8", 0],
+      "filename_prefix": "Z-Image"
+    }
+  },
+  "17": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "z_image_ae.safetensors"
+    }
+  },
+  "13": {
+    "class_type": "EmptySD3LatentImage",
+    "inputs": {
+      "width": 512,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["18", 0],
+      "text": "低质量 模糊 变形 丑陋"
+    }
+  },
+  "18": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen_3_4b_fp4.safetensors",
+      "type": "lumina2",
+      "device": "default"
+    }
+  },
+  "16": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "z_image_turbo_nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "11": {
+    "class_type": "ModelSamplingAuraFlow",
+    "inputs": {
+      "model": ["16", 0],
+      "shift": 3.0
+    }
+  },
+  "3": {
+    "class_type": "KSampler",
+    "inputs": {
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "latent_image": ["13", 0],
+      "model": ["11", 0],
+      "seed": 42,
+      "control_after_generate": "randomize",
+      "steps": 9,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["18", 0],
+      "text": "YOUR PROMPT HERE"
+    }
+  }
+}
